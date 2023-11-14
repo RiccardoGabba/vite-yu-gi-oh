@@ -13,7 +13,7 @@ export default {
     props: {
         image: String,
         name: String,
-        archetype: String,
+        archetype: String, 
     },
     data() {
         return {
