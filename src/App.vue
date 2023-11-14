@@ -1,5 +1,11 @@
 <template>
   <main>
+    <div>
+      <h1>Carte Yu gi oh</h1>
+    </div>
+    <div>
+      <selectorType/>
+    </div>
     <div class="container">
       <div class="row">
         <!--Aggiungere le cards qui-->
@@ -18,11 +24,12 @@
 import Cards from './components/Cards.vue'
 import { store } from './data/store'
 import axios from 'axios'
-
+import selectorType from './components/SelectorType.vue'
   export default {
     name: 'App',
     components: {
       Cards,
+      selectorType
     },
     data() {
       return {
