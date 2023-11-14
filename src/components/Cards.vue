@@ -1,6 +1,6 @@
 <template>
   <div class="col-4">
-    <img src="" alt="">
+    <img :src="image">
   
   <h5> {{ name }} </h5>
   <h5> {{ archetype }} </h5>
@@ -24,5 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img{
+    width: 100%;
+}
 
 </style>

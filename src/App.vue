@@ -35,10 +35,14 @@ import axios from 'axios'
         axios.get(url).then(response => {
           console.log(response.data.data)
           this.store.cardList = response.data.data
-        }
-      )}
+        })
+      }
     },
+    created() {
+      this.getCards()
+    }
   }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
