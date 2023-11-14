@@ -3,9 +3,9 @@
     <div>
       <h1>Carte Yu gi oh</h1>
     </div>
-    <div>
-      <selectorType/>
-    </div>
+     
+      <selectorType @giuseppe= "selectElement"  />
+    
     <div class="container">
       <div class="row">
         <!--Aggiungere le cards qui-->
@@ -34,15 +34,20 @@ import selectorType from './components/SelectorType.vue'
     data() {
       return {
         store,
+        params: null,
       }
     },
     methods: {
       getCards(){
         const url = store.apiUrl
-        axios.get(url).then(response => {
+        axios.get(url, {params: this.params}).then(response => {
           console.log(response.data.data)
           this.store.cardList = response.data.data
         })
+      },
+      selectElement (search){
+        this.params = {archetype: search}
+        this.getCards()
       }
     },
     created() {

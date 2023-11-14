@@ -1,6 +1,6 @@
 <template>
     
-  <div class="col-4">
+  <div class="col-2 text-center">
     <img :src="image">
   
   <h5> {{ name }} </h5>
@@ -28,5 +28,4 @@ export default {
 img{
     width: 100%;
 }
-
 </style>
