@@ -1,13 +1,26 @@
 <template>
-    <div>
-
-    </div>
+  <div class="col-4">
+    <img src="" alt="">
+  
+  <h5> {{ name }} </h5>
+  <h5> {{ archetype }} </h5>
+    </div>  
 </template>
 
 <script>
-    export default {
-        
+export default {
+    name: 'Cards',
+    props: {
+        image: String,
+        name: String,
+        archetype: String,
+    },
+    data() {
+        return {
+
+        }
     }
+};
 </script>
 
 <style lang="scss" scoped>

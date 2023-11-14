@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <!--Aggiungere le cards qui-->
 
-  </div>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
