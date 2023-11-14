@@ -1,11 +1,11 @@
 <template>
   <main>
     <div>
-      <h1>Carte Yu gi oh</h1>
+      <h1 class="text-center">Carte Yu gi oh</h1>
     </div>
-     
+    <div class="text-center mb-5">
       <selectorType @giuseppe= "selectElement"  />
-    
+    </div>
     <div class="container">
       <div class="row">
         <!--Aggiungere le cards qui-->

@@ -4,8 +4,8 @@
             <option value="">All</option>
             <option value="alien">Alien</option>
             <option value="Noble Knight">Noble Knight</option>
-            <option value="divine dragon">Drakes</option>
-            <option value="cyber dragon">cyber drago</option>
+            <option value="divine dragon">Divine Drake</option>
+            <option value="cyber dragon">Cyber Drago</option>
         </select>
         
     </div>
